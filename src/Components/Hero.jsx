@@ -4,10 +4,10 @@ import { MousePointer2 } from "lucide-react";
 import useCursor from "../CustomHooks/UseCursor";
 
 function Hero() {
-  useCursor();
+  //   useCursor();
   return (
     <section>
-      <MousePointer2 size={24} className="text-white absolute cursor z-2 " />
+      <MousePointer2 size={32} className="text-white absolute cursor z-2 " />
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto text-white font-sans">
         <div className="mt-50 flex-col gap-5">
           <h1 className="text-4xl font-black text-left">
