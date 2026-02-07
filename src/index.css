@@ -38,10 +38,8 @@
 }
 * {
   box-sizing: border-box;
+  cursor: none;
 }
 body {
   background-color: #0d1117;
-}
-
-cursor {
 }
