@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Inter", ui-sans-serif, system-ui, sans-serif;
+  /* ===== Backgrounds ===== */
+  --color-bg-primary: #0d1117;
+  --color-bg-secondary: #161b22;
+  --color-bg-tertiary: #21262d;
+
+  /* ===== Status Colors ===== */
+  --color-profit: #3fb950;
+  --color-loss: #f85149;
+  --color-neutral: #8b949e;
+
+  /* ===== Text Colors ===== */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #8b949e;
+  --color-text-muted: #6e7681;
+
+  /* ===== Borders ===== */
+  --color-border-subtle: #30363d;
+  --color-border-default: #484f58;
+  --color-border-accent: #667eea;
+
+  /* ===== Accent Gradient Colors ===== */
+  --color-purple-start: #667eea;
+  --color-purple-end: #764ba2;
+  --color-pink-start: #f093fb;
+  --color-pink-end: #f5576c;
+
+  /* ===== Additional Utilities ===== */
+  --color-success: #3fb950;
+  --color-warning: #f59e0b;
+  --color-error: #f85149;
+  --color-info: #60a5fa;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #0d1117;
+}
+
+cursor {
+}
