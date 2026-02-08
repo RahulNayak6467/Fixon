@@ -37,17 +37,19 @@ function TradingViewWidget() {
   }, []);
 
   return (
-    <div className="tradingview-widget-container" ref={container}>
-      <div className="tradingview-widget-container__widget"></div>
-      <div className="tradingview-widget-copyright">
+    <div className="h-[550px] w-[400px] border-2 border-bg-secondary rounded-2xl ml-5 mt-5">
+      <div className="tradingview-widget-container" ref={container}>
+        <div className="tradingview-widget-container__widget"></div>
+        {/* <div className="tradingview-widget-copyright"> */}
         {/* <a
           href="https://www.tradingview.com/markets/stocks-usa/"
           rel="noopener nofollow"
           target="_blank"
-        >
+          >
           <span className="blue-text">Stocks today</span>
-        </a>
-        <span className="trademark"> by TradingView</span> */}
+          </a>
+          <span className="trademark"> by TradingView</span> */}
+        {/* </div> */}
       </div>
     </div>
   );

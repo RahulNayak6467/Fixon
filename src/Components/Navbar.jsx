@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 function Navbar() {
   return (
     <header className="flex justify-around items-center py-4 text-text-primary font-sans bg-bg-secondary w-full">
@@ -5,13 +7,45 @@ function Navbar() {
       <nav>
         <ul className="flex gap-10 text-md">
           <li>
-            <a className="cursor-pointer">Dashboard</a>
+            <NavLink
+              to="/marketoverview"
+              className={({ isActive }) =>
+                isActive ? "text-purple-end font-bold" : "text-text-primary"
+              }
+            >
+              Market Overview
+            </NavLink>
           </li>
           <li>
-            <a className="cursor-pointer">Search</a>
+            <NavLink
+              to="/dashboard"
+              className={({ isActive }) =>
+                isActive ? "text-purple-end font-bold" : "text-text-primary"
+              }
+            >
+              Dashboard
+            </NavLink>
           </li>
           <li>
-            <a className="cursor-pointer">Watchlist</a>
+            <NavLink
+              to="/search"
+              className={({ isActive }) =>
+                isActive ? "text-purple-end font-bold" : "text-text-primary"
+              }
+            >
+              Search
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/watchlist"
+              className={({ isActive }) =>
+                isActive ? "text-purple-end font-bold" : "text-text-primary"
+              }
+            >
+              {" "}
+              Watchlist
+            </NavLink>
           </li>
         </ul>
       </nav>
